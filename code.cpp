@@ -289,34 +289,18 @@ int main()
    case 6:
 {
     WeatherCalculator calc;
-    int option;
 
-    cout << "\n1. Average of 2 temperatures";
-    cout << "\n2. Average of 3 temperatures";
-    cout << "\nEnter choice: ";
-    cin >> option;
+            cout << "\nAverage of 30 and 40 = "
+                 << calc.average(30, 40);
 
-    if(option == 1)
-    {
-        float a, b;
-        cout << "Enter 2 temperatures: ";
-        cin >> a >> b;
+            cout << "\nAverage of 30, 40 and 50 = "
+                 << calc.average(30, 40, 50);
 
-        cout << "Average = "
-             << calc.average(a, b) << endl;
-    }
-    else if(option == 2)
-    {
-        float a, b, c;
-        cout << "Enter 3 temperatures: ";
-        cin >> a >> b >> c;
+            cout << endl;
 
-        cout << "Average = "
-             << calc.average(a, b, c) << endl;
-    }
+            break;
+        }
 
-    break;
-}
 
         case 0:
         {
